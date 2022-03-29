@@ -1,13 +1,17 @@
 import UserItem from '../UserItem'
 import { UsersInterface } from '../../interfaces/UsersInterface'
+import { List, UserListTitle, UserListWrapper } from '../../styles/ListStyle'
 
 const HomePage = ({ users }: UsersInterface) => {
    return (
-      <ul>
-         {users.map((user) => {
-            return <UserItem user={user} key={user.id} />
-         })}
-      </ul>
+      <UserListWrapper>
+         <UserListTitle>Наши Бравлеры</UserListTitle>
+         <List>
+            {users.map((user) => {
+               return <UserItem user={user} key={user.id} />
+            })}
+         </List>
+      </UserListWrapper>
    )
 }
 

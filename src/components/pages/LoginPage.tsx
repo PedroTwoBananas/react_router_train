@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom'
+import { LoginWrapper, LoginBlock, LoginTitle, LoginButton } from '../../styles/LoginPageStyle'
 
 type authoriseProps = {
    authorise: () => void
@@ -22,10 +23,12 @@ const LoginPage = ({ authorise }: authoriseProps) => {
    }
 
    return (
-      <div>
-         <h2>Нажмите кнопку для входа</h2>
-         <button onClick={goToNotificationPage}>Войти</button>
-      </div>
+      <LoginWrapper>
+         <LoginBlock>
+            <LoginTitle>Нажмите кнопку для входа</LoginTitle>
+            <LoginButton onClick={goToNotificationPage}>Войти</LoginButton>
+         </LoginBlock>
+      </LoginWrapper>
    )
 }
 

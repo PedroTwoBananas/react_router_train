@@ -1,19 +1,18 @@
 import { Link } from 'react-router-dom'
 import { UserInterface } from '../interfaces/UserInterface'
+import { UserImage, UserItem, UserItemBlock, Button } from '../styles/UserItemStyle'
 
 const User = ({ user }: UserInterface) => {
    return (
-      <div>
-         <div>
-            <img width="80" height="80" src={user.avatar} alt={user.nickName} />
-         </div>
-         <div>
+      <UserItemBlock>
+         <UserItem>
+            <UserImage src={user.avatar} alt={user.nickName} />
             <span>{user.nickName}</span>
             <Link to={`/${user.id}`}>
-               <button>Подробнее</button>
+               <Button>Подробнее</Button>
             </Link>
-         </div>
-      </div>
+         </UserItem>
+      </UserItemBlock>
    )
 }
 

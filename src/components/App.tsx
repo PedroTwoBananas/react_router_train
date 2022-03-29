@@ -8,6 +8,7 @@ import Private from './hoc/Private'
 import NotificationPage from './pages/NotificationPage'
 import LoginPage from './pages/LoginPage'
 import { useState } from 'react'
+import { AppWrapper } from '../styles/AppStyle'
 
 const App = () => {
    const users = getUsers()
@@ -19,7 +20,7 @@ const App = () => {
    }
 
    return (
-      <div>
+      <AppWrapper>
          <Routes>
             <Route path="/" element={<Navigation />}>
                <Route index element={<HomePage users={users} />}></Route>
@@ -39,7 +40,7 @@ const App = () => {
                <Route path="*" element={<NotFound />} />
             </Route>
          </Routes>
-      </div>
+      </AppWrapper>
    )
 }
 
