@@ -6,6 +6,7 @@ const Navigation = () => {
       <>
          <NavSection>
             <NavLink to="/">Главная</NavLink>
+            <NavLink to="/notification">Уведомление</NavLink>
          </NavSection>
          <main>
             <Outlet />
