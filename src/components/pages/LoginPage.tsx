@@ -1,6 +1,11 @@
 import { useLocation, useNavigate } from 'react-router-dom'
-import { LoginWrapper, LoginBlock, LoginTitle, LoginButton } from '../../styles/LoginPageStyle'
-
+import {
+   LoginWrapper,
+   LoginBlock,
+   LoginTitle,
+   LoginButton,
+} from '../../styles/LoginPageStyle'
+import React from 'react'
 type authoriseProps = {
    authorise: () => void
 }
@@ -32,4 +37,4 @@ const LoginPage = ({ authorise }: authoriseProps) => {
    )
 }
 
-export default LoginPage
+export default React.memo(LoginPage)

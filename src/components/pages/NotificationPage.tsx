@@ -1,4 +1,9 @@
-import { NotificationWrapper, NotificationText, NotificationBlock } from "../../styles/NotificationPageStyle"
+import {
+   NotificationWrapper,
+   NotificationText,
+   NotificationBlock,
+} from '../../styles/NotificationPageStyle'
+import React from 'react'
 
 const NotificationPage = () => {
    return (
@@ -16,4 +21,4 @@ const NotificationPage = () => {
    )
 }
 
-export default NotificationPage
+export default React.memo(NotificationPage)

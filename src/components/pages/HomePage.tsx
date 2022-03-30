@@ -1,7 +1,7 @@
 import UserItem from '../UserItem'
 import { UsersInterface } from '../../interfaces/UsersInterface'
 import { List, UserListTitle, UserListWrapper } from '../../styles/ListStyle'
-
+import React from 'react'
 const HomePage = ({ users }: UsersInterface) => {
    return (
       <UserListWrapper>
@@ -15,4 +15,4 @@ const HomePage = ({ users }: UsersInterface) => {
    )
 }
 
-export default HomePage
+export default React.memo(HomePage)

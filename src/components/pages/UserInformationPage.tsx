@@ -1,3 +1,4 @@
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import { getUser } from '../../data/users'
 import { Navigate } from 'react-router-dom'
@@ -33,4 +34,4 @@ const UserInformationPage = () => {
    )
 }
 
-export default UserInformationPage
+export default React.memo(UserInformationPage)

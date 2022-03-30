@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import { NavSection, NavBlock, NavLink } from '../styles/NavigationStyle'
+import React from 'react'
 
 const Navigation = () => {
    return (
@@ -23,4 +24,4 @@ const Navigation = () => {
    )
 }
 
-export default Navigation
+export default React.memo(Navigation)

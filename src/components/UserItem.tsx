@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom'
 import { UserInterface } from '../interfaces/UserInterface'
-import { UserImage, UserItem, UserItemBlock, Button } from '../styles/UserItemStyle'
-
+import {
+   UserImage,
+   UserItem,
+   UserItemBlock,
+   Button,
+} from '../styles/UserItemStyle'
+import React from 'react'
 const User = ({ user }: UserInterface) => {
    return (
       <UserItemBlock>
@@ -16,4 +21,4 @@ const User = ({ user }: UserInterface) => {
    )
 }
 
-export default User
+export default React.memo(User)
