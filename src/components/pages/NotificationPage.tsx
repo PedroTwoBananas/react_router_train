@@ -9,7 +9,7 @@ const NotificationPage = () => {
                и ты среди них!
             </NotificationText>
             <NotificationText>
-               Если ты рак и/или нуб, то УХАДИ!
+               Если ты рак и/или нуб, то мы научим тебя тащить катки
             </NotificationText>
          </NotificationBlock>
       </NotificationWrapper>
